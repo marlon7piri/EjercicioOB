@@ -1,0 +1,54 @@
+class Persona{
+private int edad;
+private String nombre;
+private int numeroTelefono;
+
+    public static void main(String[] args) {
+
+Persona persona = new Persona();
+persona.MostrarDatos("Juan",23,65844123);
+
+
+
+    }
+
+
+    public void setEdad(int edad){
+        this.edad=edad;
+
+    }
+    public  int  getEdad(){
+        return this.edad;
+
+
+    }
+
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
+
+    public String getNombre(){
+
+        return this.nombre;
+    }
+
+    public void setNumeroTelefono(int numerotelefono){
+        this.numeroTelefono=numerotelefono;
+    }
+
+    public int getNumeroTelefono(){
+        return this.numeroTelefono;
+    }
+
+
+
+    public void MostrarDatos(String nombre,int edad , int numero){
+
+        System.out.print("El nombre es" + nombre + " tiene una edad de " + edad + " y su numero de telefono es " + numero);
+
+
+
+    }
+
+
+}
